@@ -98,7 +98,6 @@
       <nav>
         <a href="#schedule">タイムテーブル</a>
         <a href="#sports">競技</a>
-        <a href="#access">アクセス</a>
         <a href="#faq">よくある質問</a>
       </nav>
     </div>
@@ -177,19 +176,6 @@
       </div>
     </section>
 
-    <section id="access" class="card">
-      <h2>アクセス</h2>
-      <div class="row"><div class="k">会場</div><div class="v">座光寺小学校 グラウンド（雨天: 体育館）</div></div>
-      <div class="row"><div class="k">住所</div><div class="v">長野県飯田市座光寺 <丁目番地></div></div>
-      <div class="flex" style="margin:10px 0 14px">
-        <a class="btn secondary" target="_blank" rel="noopener" id="gmapLink">📍 Googleマップを開く</a>
-        <a class="btn secondary" target="_blank" rel="noopener" href="https://www.navitime.co.jp/" aria-label="ナビタイムを開く">🧭 経路検索</a>
-      </div>
-      <iframe class="map" loading="lazy" allowfullscreen
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.0000000000005!2d137.00000000000003!3d35.00000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z44CSMDAwLTAwMCDml6XmnKPlupc!5e0!3m2!1sja!2sjp!4v0000000000000">
-      </iframe>
-      <p class="note" style="margin-top:8px">* 地図の位置はダミーです。後述のコード中の <span class="mono">LAT</span> / <span class="mono">LNG</span> を修正してください。</p>
-    </section>
 
 
     <section id="faq" class="card">
@@ -234,13 +220,6 @@
     };
     const GITHUB_PAGES_BASE = 'https://<your-username>.github.io/<your-repo>/';
     // -------------------------------------------------------------------
-
-    // 地図リンクの生成
-    const gmapLink = document.getElementById('gmapLink');
-    if(gmapLink){
-      const url = `https://maps.google.com/?q=${EVENT.LAT},${EVENT.LNG}`;
-      gmapLink.href = url;
-    }
 
     // .ics 生成
     const pad = n => String(n).padStart(2,'0');
