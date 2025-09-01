@@ -118,7 +118,6 @@
           </div>
           <div class="flex" style="margin-top:16px">
             <a href="#schedule" class="btn secondary">📅 タイムテーブル</a>
-            <button class="btn secondary" id="addToCal">🗓️ カレンダーに追加(.ics)</button>
           </div>
           <p class="note" style="margin-top:10px">※ 受付・進行は状況により前後する場合があります。</p>
         </div>
@@ -198,65 +197,6 @@
     </div>
   </footer>
 
-  <script>
-    // ---- 設定（ここを書き換えてください）-----------------------------
-    const EVENT = {
-      title: '座光寺地域市民運動会 2025',
-      start: '2025-10-12T09:00:00+09:00',
-      end:   '2025-10-12T15:00:00+09:00',
-      locationText: '座光寺小学校 グラウンド',
-      addressText: '長野県飯田市座光寺 <丁目番地>',
-      LAT: 35.505808, // ← 実座標に変更
-      LNG: 137.851875 // ← 実座標に変更
-    };
-    const GITHUB_PAGES_BASE = 'https://<your-username>.github.io/<your-repo>/';
-    // -------------------------------------------------------------------
-
-    // .ics 生成
-    const pad = n => String(n).padStart(2,'0');
-    function toICSDate(d){
-      // ICSは基本UTC。日本時刻をUTCに換算
-      const dt = new Date(d);
-      const y = dt.getUTCFullYear();
-      const m = pad(dt.getUTCMonth()+1);
-      const day = pad(dt.getUTCDate());
-      const h = pad(dt.getUTCHours());
-      const min = pad(dt.getUTCMinutes());
-      const s = pad(dt.getUTCSeconds());
-      return `${y}${m}${day}T${h}${min}${s}Z`;
-    }
-    function buildICS(){
-      const dtStamp = toICSDate(new Date());
-      const dtStart = toICSDate(EVENT.start);
-      const dtEnd   = toICSDate(EVENT.end);
-      const ics = [
-        'BEGIN:VCALENDAR',
-        'VERSION:2.0',
-        'PRODID:-//Kawara Sports Day//JP',
-        'CALSCALE:GREGORIAN',
-        'METHOD:PUBLISH',
-        'BEGIN:VEVENT',
-        'UID:' + crypto.randomUUID() + '@kawara.local',
-        'DTSTAMP:' + dtStamp,
-        'DTSTART:' + dtStart,
-        'DTEND:' + dtEnd,
-        'SUMMARY:' + EVENT.title,
-        'LOCATION:' + EVENT.locationText + ' ' + EVENT.addressText,
-        'DESCRIPTION:' + '地区運動会のご案内。詳細は' + GITHUB_PAGES_BASE,
-        'END:VEVENT',
-        'END:VCALENDAR'
-      ].join('\r\n');
-      return ics;
-    }
-    document.getElementById('addToCal')?.addEventListener('click', () => {
-      const blob = new Blob([buildICS()], {type: 'text/calendar'});
-      const url  = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'sports-day-2025.ics';
-      a.click();
-      setTimeout(()=>URL.revokeObjectURL(url), 2000);
-    });
-
-  </script>
+  
 </body>
 </html>
