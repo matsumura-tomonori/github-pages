@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>座光寺地域市民運動会 2025｜告知ページ</title>
-  <meta name="description" content="座光寺地域市民運動会の告知ページ。日程、場所、競技、持ち物、申し込み方法などを掲載。" />
+  <meta name="description" content="座光寺地域市民運動会の告知ページ。日程、場所、競技、持ち物などを掲載。" />
   <meta property="og:title" content="座光寺地域市民運動会 2025｜告知ページ" />
-  <meta property="og:description" content="日程・場所・競技・申込方法はこちら。" />
+  <meta property="og:description" content="日程・場所・競技はこちら。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://<your-username>.github.io/<your-repo>/" />
   <meta property="og:image" content="https://<your-username>.github.io/<your-repo>/ogp.png" />
@@ -100,7 +100,6 @@
         <a href="#schedule">タイムテーブル</a>
         <a href="#sports">競技</a>
         <a href="#access">アクセス</a>
-        <a href="#entry">参加申込</a>
         <a href="#faq">よくある質問</a>
       </nav>
     </div>
@@ -120,7 +119,6 @@
             <div class="row"><div class="k">持ち物</div><div class="v">タオル、帽子、運動のできる服装（スパイクは禁止）</div></div>
           </div>
           <div class="flex" style="margin-top:16px">
-            <a href="#entry" class="btn" id="entryBtn">📝 参加申し込み</a>
             <a href="#schedule" class="btn secondary">📅 タイムテーブル</a>
             <button class="btn secondary" id="addToCal">🗓️ カレンダーに追加(.ics)</button>
           </div>
@@ -130,7 +128,6 @@
           <h3>最新のお知らせ</h3>
           <ul class="list">
             <li>9/15: 種目の最終調整を行いました。雨天時は体育館で実施します。</li>
-            <li>9/10: 参加申込フォームを公開しました。代表者1名でOK。</li>
             <li>9/01: 告知ページを公開しました。</li>
           </ul>
           <div class="chips" style="margin-top:12px">
@@ -202,15 +199,6 @@
       <p class="note" style="margin-top:8px">* 地図の位置はダミーです。後述のコード中の <span class="mono">LAT</span> / <span class="mono">LNG</span> を修正してください。</p>
     </section>
 
-    <section id="entry" class="card">
-      <h2>参加申込</h2>
-      <p>Googleフォームを利用して申し込みを受け付けます。代表者1名の入力でOKです。</p>
-      <div class="flex">
-        <a class="btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/<your-form-id>/viewform">📝 フォームを開く</a>
-        <a class="btn secondary" href="#faq">❓ 申込に関する質問</a>
-      </div>
-      <p class="note" style="margin-top:10px">フォームが難しい場合は、体育係までお電話ください。</p>
-    </section>
 
     <section id="faq" class="card">
       <h2>よくある質問</h2>
@@ -221,10 +209,6 @@
       <details>
         <summary>持ち物は？</summary>
         <p>タオル・帽子・運動のできる服装（スパイクは禁止）。</p>
-      </details>
-      <details>
-        <summary>個人情報の取り扱いは？</summary>
-        <p>申込情報は本イベント運営にのみ使用し、終了後に適切に破棄します。</p>
       </details>
     </section>
 
@@ -256,7 +240,6 @@
       LAT: 35.505808, // ← 実座標に変更
       LNG: 137.851875 // ← 実座標に変更
     };
-    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/<your-form-id>/viewform';
     const GITHUB_PAGES_BASE = 'https://<your-username>.github.io/<your-repo>/';
     // -------------------------------------------------------------------
 
@@ -312,8 +295,6 @@
       setTimeout(()=>URL.revokeObjectURL(url), 2000);
     });
 
-    // 申込ボタンのURLを設定
-    document.getElementById('entryBtn')?.setAttribute('href', GOOGLE_FORM_URL);
   </script>
 </body>
 </html>
