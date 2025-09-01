@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>座光寺・河原地区 市民運動会 2025｜告知ページ</title>
+  <meta name="description" content="座光寺・河原地区の市民運動会の告知ページ。日程、場所、競技、持ち物、申し込み方法などを掲載。" />
+  <meta property="og:title" content="座光寺・河原地区 市民運動会 2025｜告知ページ" />
+  <meta property="og:description" content="日程・場所・競技・申込方法はこちら。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://<your-username>.github.io/<your-repo>/" />
+  <meta property="og:image" content="https://<your-username>.github.io/<your-repo>/ogp.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root{
+      --bg: #0b1220; /* deep navy */
+      --card:#111827; /* slate-900 */
+      --muted:#94a3b8; /* slate-400 */
+      --text:#e5e7eb; /* gray-200 */
+      --accent:#38bdf8; /* sky-400 */
+      --accent-2:#22d3ee; /* cyan-400 */
+      --ok:#22c55e;
+      --warn:#f59e0b;
+      --danger:#ef4444;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; background:linear-gradient(180deg, #0b1220 0%, #0f172a 100%); color:var(--text);}
+    a{color:var(--accent)}
+    .container{max-width:1080px; margin:0 auto; padding:24px}
+    header{position:sticky; top:0; backdrop-filter: blur(8px); background:rgba(11,18,32,.6); border-bottom:1px solid rgba(148,163,184,.15); z-index:10}
+    header .container{display:flex; align-items:center; gap:16px; justify-content:space-between}
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand .logo{width:40px; height:40px; border-radius:12px; background: radial-gradient(90% 90% at 20% 20%, var(--accent) 0%, var(--accent-2) 60%, transparent 61%),
+      linear-gradient(135deg, rgba(56,189,248,.25), rgba(34,211,238,.05)); border:1px solid rgba(148,163,184,.25); box-shadow:0 10px 30px rgba(34,211,238,.15) inset}
+    nav a{margin:0 8px; text-decoration:none; opacity:.9}
+    nav a:hover{opacity:1; text-decoration:underline}
+
+    .hero{padding:72px 0 32px}
+    .hero h1{font-size: clamp(28px, 4.5vw, 48px); line-height:1.2; margin:0 0 12px}
+    .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid rgba(148,163,184,.25); border-radius:999px; font-size:14px; color:var(--muted); background:rgba(2,6,23,.6)}
+    .grid{display:grid; gap:18px}
+    @media(min-width:900px){.grid{grid-template-columns: 1.2fr .8fr}}
+    .card{background:linear-gradient(180deg, rgba(148,163,184,.06), rgba(148,163,184,.03)); border:1px solid rgba(148,163,184,.14); border-radius:18px; padding:20px; box-shadow: 0 6px 30px rgba(0,0,0,.25)}
+    h2{font-size: clamp(22px, 3vw, 28px); margin:0 0 8px}
+    h3{font-size:18px; margin:16px 0 8px; color:#cbd5e1}
+    .list{display:grid; gap:10px}
+    .row{display:flex; gap:10px; align-items:flex-start}
+    .row .k{width:84px; font-weight:600; color:#cbd5e1}
+    .row .v{flex:1}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; border:1px solid rgba(148,163,184,.25); background:linear-gradient(180deg, rgba(56,189,248,.15), rgba(56,189,248,.05)); color:#e2f5ff; text-decoration:none; font-weight:700}
+    .btn:hover{transform: translateY(-1px)}
+    .btn.secondary{background:linear-gradient(180deg, rgba(148,163,184,.1), rgba(148,163,184,.04))}
+    .muted{color:var(--muted)}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:13px; color:#cbd5e1}
+    .chips{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{padding:6px 10px; border:1px solid rgba(148,163,184,.2); border-radius:999px; background:rgba(2,6,23,.6); font-size:12px; color:#cbd5e1}
+    footer{padding:40px 0; color:var(--muted)}
+    .note{font-size:14px; color:#cbd5e1}
+    .table{width:100%; border-collapse: collapse; font-size:15px}
+    .table th,.table td{border-bottom:1px dashed rgba(148,163,184,.2); padding:10px 6px; text-align:left}
+    .table tr:hover td{background:rgba(56,189,248,.05)}
+    .flex{display:flex; gap:12px; flex-wrap:wrap}
+    .center{display:flex; align-items:center; justify-content:center}
+    .map{width:100%; height:280px; border:0; border-radius:14px; filter: saturate(1) contrast(1.1)}
+    .alert{padding:10px 12px; border-radius:10px; border:1px solid rgba(148,163,184,.25); background:rgba(245,158,11,.08)}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SportsEvent",
+    "name":"座光寺・河原地区 市民運動会 2025",
+    "startDate":"2025-10-12T09:00:00+09:00",
+    "endDate":"2025-10-12T15:00:00+09:00",
+    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus":"https://schema.org/EventScheduled",
+    "location":{
+      "@type":"Place",
+      "name":"座光寺小学校 グラウンド",
+      "address":"長野県飯田市座光寺 <丁目番地>"
+    },
+    "image":["https://<your-username>.github.io/<your-repo>/ogp.png"],
+    "description":"地区の皆さま向けの市民運動会。ニュースポーツを中心に子どもから大人まで楽しめます。",
+    "organizer":{
+      "@type":"Organization","name":"河原地区 体育係","url":"https://<your-username>.github.io/<your-repo>/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <strong>座光寺・河原地区 市民運動会 2025</strong>
+      </div>
+      <nav>
+        <a href="#about">概要</a>
+        <a href="#schedule">タイムテーブル</a>
+        <a href="#sports">競技</a>
+        <a href="#access">アクセス</a>
+        <a href="#entry">参加申込</a>
+        <a href="#faq">よくある質問</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="badge">🏁 地区イベント｜誰でも参加OK</p>
+      <h1>10/12(日) 開催！みんなで楽しくスポーツしよう</h1>
+      <p class="muted">子どもから高齢の方まで楽しめるニュースポーツ中心。初めてでも大丈夫！
+      </p>
+      <div class="grid" style="margin-top:18px">
+        <div class="card">
+          <div class="list">
+            <div class="row"><div class="k">日付</div><div class="v">2025年10月12日(日) 9:00〜15:00（8:30 受付開始）</div></div>
+            <div class="row"><div class="k">場所</div><div class="v">座光寺小学校 グラウンド（雨天: 体育館）</div></div>
+            <div class="row"><div class="k">対象</div><div class="v">河原地区・座光寺の住民、在勤・在学者、ご家族・ご友人</div></div>
+            <div class="row"><div class="k">参加費</div><div class="v">無料</div></div>
+            <div class="row"><div class="k">持ち物</div><div class="v">飲み物、タオル、帽子、運動のできる服装（体育館シューズ）</div></div>
+          </div>
+          <div class="flex" style="margin-top:16px">
+            <a href="#entry" class="btn" id="entryBtn">📝 参加申し込み</a>
+            <a href="#schedule" class="btn secondary">📅 タイムテーブル</a>
+            <button class="btn secondary" id="addToCal">🗓️ カレンダーに追加(.ics)</button>
+          </div>
+          <p class="note" style="margin-top:10px">※ 受付・進行は状況により前後する場合があります。</p>
+        </div>
+        <aside class="card" aria-label="お知らせ">
+          <h3>最新のお知らせ</h3>
+          <ul class="list">
+            <li>9/15: 種目の最終調整を行いました。雨天時は体育館で実施します。</li>
+            <li>9/10: 参加申込フォームを公開しました。代表者1名でOK。</li>
+            <li>9/01: 告知ページを公開しました。</li>
+          </ul>
+          <div class="chips" style="margin-top:12px">
+            <span class="chip">#ニュースポーツ</span>
+            <span class="chip">#家族参加歓迎</span>
+            <span class="chip">#ボランティア募集</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>概要</h2>
+      <p>河原地区・座光寺の交流と健康増進を目的にした地域運動会です。初めての方でも楽しめる競技を揃え、
+        安全面に配慮しながら運営します。熱中症対策にご協力ください。</p>
+      <div class="alert" style="margin-top:10px">💡 <strong>お願い：</strong>ゴミは必ず持ち帰り、各自で分別にご協力ください。</div>
+    </section>
+
+    <section id="schedule" class="card">
+      <h2>タイムテーブル</h2>
+      <table class="table" aria-describedby="schedule-note">
+        <thead><tr><th>時間</th><th>内容</th><th>集合場所</th></tr></thead>
+        <tbody>
+          <tr><td>8:30</td><td>受付開始・体調チェック</td><td>グラウンド入口</td></tr>
+          <tr><td>9:00</td><td>開会式・準備体操</td><td>メイン会場</td></tr>
+          <tr><td>9:20</td><td>ニュースポーツ①（囲碁ボール / スローインボトル）</td><td>各エリア</td></tr>
+          <tr><td>10:30</td><td>ニュースポーツ②（ペタンク / モルック）</td><td>各エリア</td></tr>
+          <tr><td>12:00</td><td>昼休憩</td><td>休憩エリア</td></tr>
+          <tr><td>13:00</td><td>親子リレー / 玉入れ</td><td>メイン会場</td></tr>
+          <tr><td>14:30</td><td>表彰・閉会式</td><td>メイン会場</td></tr>
+        </tbody>
+      </table>
+      <p id="schedule-note" class="note">* 進行状況により変更となる場合があります。</p>
+    </section>
+
+    <section id="sports" class="card">
+      <h2>主な競技</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px">
+        <div class="card" style="background:rgba(34,211,238,.06)">
+          <h3>囲碁ボール</h3>
+          <p class="muted">年齢問わず楽しめる命中系ゲーム。ルール説明あり。</p>
+        </div>
+        <div class="card" style="background:rgba(56,189,248,.06)">
+          <h3>スローインボトル</h3>
+          <p class="muted">狙って倒して盛り上がる！初めてでもOK。</p>
+        </div>
+        <div class="card" style="background:rgba(34,197,94,.08)">
+          <h3>ペタンク</h3>
+          <p class="muted">フランス発祥の球技。屋外での実施を予定。</p>
+        </div>
+        <div class="card" style="background:rgba(245,158,11,.08)">
+          <h3>モルック</h3>
+          <p class="muted">フィンランド生まれの木のピン倒しゲーム。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="access" class="card">
+      <h2>アクセス</h2>
+      <div class="row"><div class="k">会場</div><div class="v">座光寺小学校 グラウンド（雨天: 体育館）</div></div>
+      <div class="row"><div class="k">住所</div><div class="v">長野県飯田市座光寺 <丁目番地></div></div>
+      <div class="flex" style="margin:10px 0 14px">
+        <a class="btn secondary" target="_blank" rel="noopener" id="gmapLink">📍 Googleマップを開く</a>
+        <a class="btn secondary" target="_blank" rel="noopener" href="https://www.navitime.co.jp/" aria-label="ナビタイムを開く">🧭 経路検索</a>
+      </div>
+      <iframe class="map" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.0000000000005!2d137.00000000000003!3d35.00000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z44CSMDAwLTAwMCDml6XmnKPlupc!5e0!3m2!1sja!2sjp!4v0000000000000">
+      </iframe>
+      <p class="note" style="margin-top:8px">* 地図の位置はダミーです。後述のコード中の <span class="mono">LAT</span> / <span class="mono">LNG</span> を修正してください。</p>
+    </section>
+
+    <section id="entry" class="card">
+      <h2>参加申込</h2>
+      <p>Googleフォームを利用して申し込みを受け付けます。代表者1名の入力でOKです。</p>
+      <div class="flex">
+        <a class="btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/<your-form-id>/viewform">📝 フォームを開く</a>
+        <a class="btn secondary" href="#faq">❓ 申込に関する質問</a>
+      </div>
+      <p class="note" style="margin-top:10px">フォームが難しい場合は、体育係までお電話ください。</p>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>よくある質問</h2>
+      <details>
+        <summary>雨の場合は？</summary>
+        <p>体育館で実施します。内履き（体育館シューズ）をご用意ください。</p>
+      </details>
+      <details>
+        <summary>持ち物は？</summary>
+        <p>飲み物・タオル・帽子・動きやすい服装。屋内用シューズがあると安心です。</p>
+      </details>
+      <details>
+        <summary>個人情報の取り扱いは？</summary>
+        <p>申込情報は本イベント運営にのみ使用し、終了後に適切に破棄します。</p>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>運営</h2>
+      <div class="list">
+        <div class="row"><div class="k">主催</div><div class="v">河原地区 体育係</div></div>
+        <div class="row"><div class="k">連絡先</div><div class="v">matsumura_t@yahoo.co.jp（松村）</div></div>
+        <div class="row"><div class="k">協力</div><div class="v">座光寺自治振興センター ほか</div></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="center">
+    <div class="container">
+      <p>© 2025 河原地区 体育係</p>
+    </div>
+  </footer>
+
+  <script>
+    // ---- 設定（ここを書き換えてください）-----------------------------
+    const EVENT = {
+      title: '座光寺・河原地区 市民運動会 2025',
+      start: '2025-10-12T09:00:00+09:00',
+      end:   '2025-10-12T15:00:00+09:00',
+      locationText: '座光寺小学校 グラウンド',
+      addressText: '長野県飯田市座光寺 <丁目番地>',
+      LAT: 35.505808, // ← 実座標に変更
+      LNG: 137.851875 // ← 実座標に変更
+    };
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/<your-form-id>/viewform';
+    const GITHUB_PAGES_BASE = 'https://<your-username>.github.io/<your-repo>/';
+    // -------------------------------------------------------------------
+
+    // 地図リンクの生成
+    const gmapLink = document.getElementById('gmapLink');
+    if(gmapLink){
+      const url = `https://maps.google.com/?q=${EVENT.LAT},${EVENT.LNG}`;
+      gmapLink.href = url;
+    }
+
+    // .ics 生成
+    const pad = n => String(n).padStart(2,'0');
+    function toICSDate(d){
+      // ICSは基本UTC。日本時刻をUTCに換算
+      const dt = new Date(d);
+      const y = dt.getUTCFullYear();
+      const m = pad(dt.getUTCMonth()+1);
+      const day = pad(dt.getUTCDate());
+      const h = pad(dt.getUTCHours());
+      const min = pad(dt.getUTCMinutes());
+      const s = pad(dt.getUTCSeconds());
+      return `${y}${m}${day}T${h}${min}${s}Z`;
+    }
+    function buildICS(){
+      const dtStamp = toICSDate(new Date());
+      const dtStart = toICSDate(EVENT.start);
+      const dtEnd   = toICSDate(EVENT.end);
+      const ics = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Kawara Sports Day//JP',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'BEGIN:VEVENT',
+        'UID:' + crypto.randomUUID() + '@kawara.local',
+        'DTSTAMP:' + dtStamp,
+        'DTSTART:' + dtStart,
+        'DTEND:' + dtEnd,
+        'SUMMARY:' + EVENT.title,
+        'LOCATION:' + EVENT.locationText + ' ' + EVENT.addressText,
+        'DESCRIPTION:' + '地区運動会のご案内。詳細は' + GITHUB_PAGES_BASE,
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+      return ics;
+    }
+    document.getElementById('addToCal')?.addEventListener('click', () => {
+      const blob = new Blob([buildICS()], {type: 'text/calendar'});
+      const url  = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'sports-day-2025.ics';
+      a.click();
+      setTimeout(()=>URL.revokeObjectURL(url), 2000);
+    });
+
+    // 申込ボタンのURLを設定
+    document.getElementById('entryBtn')?.setAttribute('href', GOOGLE_FORM_URL);
+  </script>
+</body>
+</html>
