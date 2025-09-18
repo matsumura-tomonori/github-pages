@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.codexcms.dev/schema.json",
+  "media": {
+    "defaultTarget": "images",
+    "targets": {
+      "images": {
+        "directory": "src/img",
+        "naming": {
+          "strategy": "datetime",
+          "sources": [
+            "metadata.exif.DateTimeOriginal",
+            "metadata.createdAt",
+            "system.createdAt"
+          ],
+          "format": "yyyyMMddHHmmss"
+        }
+      }
+    }
+  }
+}
