@@ -65,6 +65,13 @@
     .center{display:flex; align-items:center; justify-content:center}
     .map{width:100%; height:280px; border:0; border-radius:14px; filter: saturate(1) contrast(1.1)}
     .alert{padding:10px 12px; border-radius:10px; border:1px solid rgba(148,163,184,.25); background:rgba(245,158,11,.08)}
+    .faq-items{display:grid; gap:12px; margin-top:12px}
+    .faq-items details{padding:14px 16px; border:1px solid rgba(148,163,184,.25); border-radius:14px; background:rgba(2,6,23,.6)}
+    .faq-items summary{font-weight:600; color:#cbd5e1; cursor:pointer; list-style:none}
+    .faq-items summary::-webkit-details-marker{display:none}
+    .faq-items summary::after{content:"＋"; float:right; font-weight:400; color:var(--accent); transition:transform .2s}
+    .faq-items details[open] summary::after{content:"−"}
+    .faq-items p{margin:8px 0 0; line-height:1.6}
   </style>
   <script type="application/ld+json">
   {
@@ -153,6 +160,16 @@
           <a href="src/rulebook.pdf" class="btn secondary" target="_blank" rel="noopener">競技ルールブック（PDF）</a>
         </div>
       </section>
+
+    <section id="faq" class="card">
+      <h2>よくある質問</h2>
+      <div class="faq-items">
+        <details>
+          <summary>雨の場合は？</summary>
+          <p>前日 11 日に中止の連絡を各組の組長よりします。前日に判断がつかない場合は、12 日午前 5 時に最終判断が行われ、その後連絡します。</p>
+        </details>
+      </div>
+    </section>
 
 
 
